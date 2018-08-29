@@ -2,16 +2,13 @@
 
 Resource          _resource.robot
 Test Setup        Prepare Test Environment
-Test Teardown   Close All Browsers
+Test Teardown     Close All Browsers
 
 
 *** Test Cases ***
 
 Login Test
-	Click Link  ${LOGIN BUTTON}
-	Input Text  ${INPUT EMAIL}  ${VALID USER}
-	Input Text  ${INPUT PASSWORD}  ${VALID PASSWORD}
-	Click Element  ${CLICK LOGIN}
+	Login
 	Page Should Contain  Мій обліковий запис
 	Page Should Contain  Мої замовлення
 
@@ -33,8 +30,9 @@ Check the cart Test
     Page Should Contain  Оформлення замовлення
     Page Should Contain  $305
 
-
-
-
+Change Language To Eng Test
+	Click Element  ${LANGUAGES BLOK}
+	Click Element  ${ENG LANGUAGE}
+	Page Should Contain  Shop
 
 

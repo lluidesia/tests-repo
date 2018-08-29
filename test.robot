@@ -16,3 +16,7 @@ Dummy Test
 	Page Should Contain  Мій обліковий запис
 	Page Should Contain  Мої замовлення
 	Page Should Contain Element  css=ul.list-unstyled:nth-child(2) > li:nth-child(1) > a:nth-child(1)
+
+
+
+

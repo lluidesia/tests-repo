@@ -7,6 +7,8 @@ ${URL}      http://kochut.org/
 ${RING URL}      ${URL}/shop/rings/ring-the-sun-of-the-desert-silver-gold-ruby.html
 ${VALID USER}     liudapqa+test@gmail.com
 ${VALID PASSWORD}    test100818
+${INVALID USER}     l1@gmail.com
+${INVALID PASSWORD}    te
 ${LOGIN BUTTON}    css=.login__button
 ${ADD TO CART BUTTON}    css=#button-cart
 ${CONFIRM RING TEXT}    Товар Каблучка "Сонце пустелі". Срібло, золото, рубін доданий в Ваший кошик!
@@ -16,6 +18,11 @@ ${INPUT PASSWORD}    css=#input-password
 ${CLICK LOGIN}    css=input.total-wrap__button
 ${GO TO SHOP}    css=div.main-page__menu:nth-child(3) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)
 ${GO TO RINGS}    css=div.item-group:nth-child(2) > a:nth-child(1)
+${LANGUAGES BLOK}    css=.languages.main-page__info-block-item
+${ENG LANGUAGE}    ${LANGUAGES BLOK} > ul > li:nth-child(3)
+${INVALID LOGIN ERROR}  Неправильно заповнені поля E-Mail і / або пароль!
+${DELETE FROM CART}  css=.item-cart__close
+
 
 *** Keywords ***
 Prepare Test Environment
@@ -27,3 +34,11 @@ Open Ring Page
 Submit Ring Adding To The Cart
     Wait Until Page Contains  ${CONFIRM RING TEXT}  30
     Page Should Contain   ${CONFIRM RING TEXT}
+
+Login
+    [Arguments]  ${email}  ${password}
+    Click Link  ${LOGIN BUTTON}
+	Input Text  ${INPUT EMAIL}  ${email}
+	Input Text  ${INPUT PASSWORD}  ${password}
+	Click Element  ${CLICK LOGIN}
+

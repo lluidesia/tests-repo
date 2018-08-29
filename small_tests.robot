@@ -1,7 +1,7 @@
 *** Settings ***
 Library  Selenium2Library
 
-#Resource          _resource.robot
+Resource          _resource.robot
 #Test Setup        Prepare Test Environment
 
 #Test Teardown   Close All Browsers
@@ -9,12 +9,13 @@ Library  Selenium2Library
 *** Test Cases ***
 
 
-Go to shop Test
-	Open Browser  https://kochut.org/  Chrome
-	Click Link  css=div.main-page__menu:nth-child(3) > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1)
-	Sleep  5
-	Click Element  css=#send-request
-
-
+Delete From Cart Test
+    [Setup]  Open Ring Page
+    Click Link  ${ADD TO CART BUTTON}
+    Submit Ring Adding To The Cart
+    Click Link  ${OPEN CART PAGE}
+    Click Element  ${DELETE FROM CART}
+    Wait Until Page Contains  Ваш кошик порожній!  30
+    Page Should Contain  Ваш кошик порожній!
 
 
