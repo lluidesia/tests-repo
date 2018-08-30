@@ -3,6 +3,8 @@
 Resource          _resource.robot
 Test Setup        Prepare Test Environment
 Test Teardown     Close All Browsers
+Force Tags      FunctionalTest
+Default Tags    ValidTest
 
 
 *** Test Cases ***
@@ -13,14 +15,17 @@ Login Test
 	Page Should Contain  Мої замовлення
 
 Login Negative Test
+    [Tags]  InvalidTest
 	Login  ${INVALID USER}  ${INVALID PASSWORD}
 	Page Should Contain  ${INVALID LOGIN ERROR}
 
 Login Invalid User Test
+    [Tags]  InvalidTest
 	Login  ${INVALID USER}  ${VALID PASSWORD}
 	Page Should Contain  ${INVALID LOGIN ERROR}
 
 Login Invalid Password Test
+    [Tags]  InvalidTest
 	Login  ${VALID USER}  ${INVALID PASSWORD}
 	Page Should Contain  ${INVALID LOGIN ERROR}
 
