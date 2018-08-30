@@ -3,12 +3,11 @@ Library  Selenium2Library
 
 Resource          _resource.robot
 #Test Setup        Prepare Test Environment
-
 #Test Teardown   Close All Browsers
 
 *** Test Cases ***
 
-
+#testing small tests before adding to main files
 Delete From Cart Test
     [Setup]  Open Ring Page
     Click Link  ${ADD TO CART BUTTON}
