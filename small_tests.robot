@@ -8,13 +8,13 @@ Resource          _resource.robot
 *** Test Cases ***
 
 #testing small tests before adding to main files
-Delete From Cart Test
+Increase Items In Cart Test
     [Setup]  Open Ring Page
     Click Link  ${ADD TO CART BUTTON}
     Submit Ring Adding To The Cart
     Click Link  ${OPEN CART PAGE}
-    Click Element  ${DELETE FROM CART}
-    Wait Until Page Contains  Ваш кошик порожній!  30
-    Page Should Contain  Ваш кошик порожній!
-
+    Click Element  ${INCREASE ITEM}
+    #Sleep  3
+    #Wait Until Page Contains  css=#total_total > span.total-wrap__cost-count  15
+    Wait Until Element Contains  css=.total-wrap__cost-count  $610  30
 

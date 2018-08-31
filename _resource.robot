@@ -22,6 +22,8 @@ ${LANGUAGES BLOK}    css=.languages.main-page__info-block-item
 ${ENG LANGUAGE}    ${LANGUAGES BLOK} > ul > li:nth-child(3)
 ${INVALID LOGIN ERROR}  Неправильно заповнені поля E-Mail і / або пароль!
 ${DELETE FROM CART}  css=.item-cart__close
+${INCREASE ITEM}  css=span.count__max
+${CART TOTAL}  css=.total-wrap__cost-count
 
 
 *** Keywords ***

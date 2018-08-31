@@ -5,6 +5,8 @@ Test Setup        Prepare Test Environment
 Test Teardown     Close All Browsers
 Force Tags      FunctionalTest
 Default Tags    ValidTest
+#robot -e TagName - запуск без TagName тестів
+#robot -i TagName - запуск лише TagName тестів
 
 
 *** Test Cases ***

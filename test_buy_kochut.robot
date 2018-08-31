@@ -26,5 +26,10 @@ Delete From Cart Test
     Wait Until Page Contains  Ваш кошик порожній!  30
     Page Should Contain  Ваш кошик порожній!
 
-
+Increase Items In Cart Test
+    Click Link  ${ADD TO CART BUTTON}
+    Submit Ring Adding To The Cart
+    Click Link  ${OPEN CART PAGE}
+    Click Element  ${INCREASE ITEM}
+    Wait Until Element Contains  ${CART TOTAL}  $610  30
 
