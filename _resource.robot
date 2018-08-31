@@ -24,6 +24,10 @@ ${INVALID LOGIN ERROR}  Неправильно заповнені поля E-Mai
 ${DELETE FROM CART}  css=.item-cart__close
 ${INCREASE ITEM}  css=span.count__max
 ${CART TOTAL}  css=.total-wrap__cost-count
+${SEARCH BUTTON}  css=#search > button
+${SEARCH INPUT}  css=#search-input
+${SEARCH START}  css=#search > div > button
+${SEARCH RESULT SUM}  css=#content > div.catalog__top > div:nth-child(1) > span > strong
 
 
 *** Keywords ***

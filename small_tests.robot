@@ -8,13 +8,13 @@ Resource          _resource.robot
 *** Test Cases ***
 
 #testing small tests before adding to main files
-Increase Items In Cart Test
-    [Setup]  Open Ring Page
-    Click Link  ${ADD TO CART BUTTON}
-    Submit Ring Adding To The Cart
-    Click Link  ${OPEN CART PAGE}
-    Click Element  ${INCREASE ITEM}
-    #Sleep  3
-    #Wait Until Page Contains  css=#total_total > span.total-wrap__cost-count  15
-    Wait Until Element Contains  css=.total-wrap__cost-count  $610  30
+Search Test
+    [Setup]  Prepare Test Environment
+    Click Element  css=#search > button
+    Input Text  css=#search-input  Мокуме
+    Click Element  css=#search > div > button
+    Wait Until Element Contains  css=#content > div.catalog__top > div:nth-child(1) > span > strong  71
+    Page Should Contain  Пошук - Мокуме
+
+
 
