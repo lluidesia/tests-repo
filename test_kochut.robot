@@ -17,4 +17,10 @@ Change Language To Eng Test
 	Click Element  ${ENG LANGUAGE}
 	Page Should Contain  Shop
 
+Search Test
+    Click Element  ${SEARCH BUTTON}
+    Input Text  ${SEARCH INPUT}  Мокуме
+    Click Element  ${SEARCH START}
+    Wait Until Element Contains  ${SEARCH RESULT SUM}  71
+    Page Should Contain  Пошук - Мокуме
 
