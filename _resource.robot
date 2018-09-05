@@ -3,8 +3,10 @@ Library           Selenium2Library  30  15
 
 *** Variables ***
 ${BROWSER}        Chrome
-${URL}      http://kochut.org/
-${RING URL}      ${URL}/shop/rings/ring-the-sun-of-the-desert-silver-gold-ruby.html
+#${URL}      http://kochut.org/
+${URL}      https://jewellery.kochut.org/shop/
+#${RING URL}      ${URL}/shop/rings/ring-the-sun-of-the-desert-silver-gold-ruby.html
+${RING URL}      ${URL}/rings/ring-the-sun-of-the-desert-silver-gold-ruby.html
 ${VALID USER}     liudapqa+test@gmail.com
 ${VALID PASSWORD}    test100818
 ${INVALID USER}     l1@gmail.com
@@ -19,7 +21,7 @@ ${CLICK LOGIN}    css=input.total-wrap__button
 ${GO TO SHOP}    css=div.main-page__menu:nth-child(3) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)
 ${GO TO RINGS}    css=div.item-group:nth-child(2) > a:nth-child(1)
 ${LANGUAGES BLOK}    css=.languages.main-page__info-block-item
-${ENG LANGUAGE}    ${LANGUAGES BLOK} > ul > li:nth-child(3)
+${ENG LANGUAGE}    ${LANGUAGES BLOK} > ul > li:nth-child(3) > a
 ${INVALID LOGIN ERROR}  Неправильно заповнені поля E-Mail і / або пароль!
 ${DELETE FROM CART}  css=.item-cart__close
 ${INCREASE ITEM}  css=span.count__max
@@ -27,7 +29,7 @@ ${CART TOTAL}  css=.total-wrap__cost-count
 ${SEARCH BUTTON}  css=#search > button
 ${SEARCH INPUT}  css=#search-input
 ${SEARCH START}  css=#search > div > button
-${SEARCH RESULT SUM}  css=#content > div.catalog__top > div:nth-child(1) > span > strong
+${SEARCH RESULT SUM}  css=.catalog__top-half.mobile-first
 
 
 *** Keywords ***

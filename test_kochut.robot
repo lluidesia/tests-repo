@@ -22,5 +22,4 @@ Search Test
     Input Text  ${SEARCH INPUT}  Мокуме
     Click Element  ${SEARCH START}
     Wait Until Element Contains  ${SEARCH RESULT SUM}  71
-    Page Should Contain  Пошук - Мокуме
-
+    Page Should Contain  Мокуме
