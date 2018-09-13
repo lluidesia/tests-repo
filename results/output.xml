@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.5 on linux)" generated="20180905 16:42:29.426">
+<suite id="s1" name="Small Tests" source="/home/liuda/tests-repo/small_tests.robot">
+<test id="s1-t1" name="Change Language To Eng Test">
+<kw name="Prepare Test Environment" library="_resource" type="setup">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180905 16:42:29.658" level="INFO">Opening browser 'Chrome' to base url 'https://jewellery.kochut.org/shop/'.</msg>
+<status status="PASS" starttime="20180905 16:42:29.658" endtime="20180905 16:42:34.929"></status>
+</kw>
+<status status="PASS" starttime="20180905 16:42:29.657" endtime="20180905 16:42:34.930"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${LANGUAGES BLOK}</arg>
+</arguments>
+<msg timestamp="20180905 16:42:34.932" level="INFO">Clicking element 'css=.languages.main-page__info-block-item'.</msg>
+<status status="PASS" starttime="20180905 16:42:34.931" endtime="20180905 16:42:35.078"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>css=.languages.main-page__info-block-item &gt; ul &gt; li:nth-child(3) &gt; a</arg>
+</arguments>
+<msg timestamp="20180905 16:42:35.079" level="INFO">Clicking link 'css=.languages.main-page__info-block-item &gt; ul &gt; li:nth-child(3) &gt; a'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180905 16:42:35.367" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180905 16:42:35.156" endtime="20180905 16:42:35.367"></status>
+</kw>
+<msg timestamp="20180905 16:42:35.401" level="FAIL">ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881),platform=Linux 4.15.0-33-generic x86_64)
+</msg>
+<status status="FAIL" starttime="20180905 16:42:35.078" endtime="20180905 16:42:35.402"></status>
+</kw>
+<status status="FAIL" starttime="20180905 16:42:29.656" endtime="20180905 16:42:35.402" critical="yes">ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881),platform=Linux 4.15.0-33-generic x86_64)
+</status>
+</test>
+<status status="FAIL" starttime="20180905 16:42:29.427" endtime="20180905 16:42:35.408"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Small Tests">Small Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
