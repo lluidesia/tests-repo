@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72efecd1-9bb6-49b7-b878-19aec9409116" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Unittests_jsonplaceholder/small_unittests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unittests_jsonplaceholder/unittests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unittests_jsonplaceholder/unittests_reqres.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +14,8 @@
     <session id="918716022">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.26" value="2" />
@@ -26,17 +25,20 @@
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.51" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
           <entry key="md" value="3" />
-          <entry key="py" value="5" />
+          <entry key="py" value="7" />
           <entry key="robot" value="10" />
         </counts>
       </usages-collector>
@@ -44,28 +46,53 @@
         <counts>
           <entry key="HTML" value="2" />
           <entry key="Markdown" value="3" />
-          <entry key="Python" value="5" />
+          <entry key="Python" value="7" />
           <entry key="Robot Feature" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="205" />
-          <entry key="py" value="1309" />
+          <entry key="py" value="1327" />
           <entry key="robot" value="1180" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="205" />
-          <entry key="Python" value="1309" />
+          <entry key="Python" value="1327" />
           <entry key="Robot Feature" value="1180" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Unittests_RestAPItests/unittests_reqres.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="990">
+              <caret line="72" column="33" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="33" />
+              <folding>
+                <element signature="e#1#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Real_test/test_workua.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -90,6 +117,7 @@
         <option value="$PROJECT_DIR$/Unittests_jsonplaceholder/unittests.py" />
         <option value="$PROJECT_DIR$/Unittests_jsonplaceholder/small_unittests.py" />
         <option value="$PROJECT_DIR$/Unittests_jsonplaceholder/unittests_reqres.py" />
+        <option value="$PROJECT_DIR$/Real_test/test_workua.py" />
       </list>
     </option>
   </component>
@@ -112,6 +140,16 @@
               <item name="tests-repo" type="b2602c69:ProjectViewProjectNode" />
               <item name="tests-repo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tests-repo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests-repo" type="462c0819:PsiDirectoryNode" />
+              <item name="Real_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tests-repo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests-repo" type="462c0819:PsiDirectoryNode" />
+              <item name="Unittests_RestAPItests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -119,7 +157,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/py-projects" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -154,8 +192,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960877" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24960877" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -166,7 +205,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.39751554" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.39751554" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32919255" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -222,13 +261,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Unittests_jsonplaceholder/less16-unit1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="32" column="30" lean-forward="true" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Unittests_jsonplaceholder/less16-unit1.py" />
     <entry file="file://$PROJECT_DIR$/small_tests.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -257,24 +290,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Unittests_jsonplaceholder/small_unittests.py">
+    <entry file="file://$PROJECT_DIR$/Unittests_jsonplaceholder/small_unittests.py" />
+    <entry file="file://$PROJECT_DIR$/Unittests_jsonplaceholder/unittests.py" />
+    <entry file="file://$PROJECT_DIR$/Unittests_jsonplaceholder/unittests_reqres.py" />
+    <entry file="file://$PROJECT_DIR$/Unittests_RestAPItests/unittests_reqres.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        <state relative-caret-position="990">
+          <caret line="72" column="33" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="33" />
+          <folding>
+            <element signature="e#1#16#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Unittests_jsonplaceholder/unittests.py">
+    <entry file="file://$PROJECT_DIR$/Real_test/test_workua.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Unittests_jsonplaceholder/unittests_reqres.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="112" column="32" lean-forward="true" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
+        <state relative-caret-position="216">
+          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
